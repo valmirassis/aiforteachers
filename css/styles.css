@@ -1,0 +1,119 @@
+
+body {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+     
+  flex-direction: column;
+  /* min-height: 82vh; */
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+a {
+    text-decoration: none;
+    color: #021b35;
+}
+a:hover {
+    color: #8e4437;
+    text-decoration: none;
+}
+label {
+    font-weight: bold;
+}
+
+footer {
+
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    margin-bottom:0px;
+    margin-top: 20px;
+    width: 100%;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover {    
+    color: #8e4437;
+    text-decoration: none;  
+}
+  .resultado-md { max-width: 95%; }
+  .resultado-md h2, .resultado-md h3, .resultado-md strong { font-weight: 600; }
+  .resultado-md hr { border: none; border-top: 1px solid #ddd; margin: 16px 0; }
+  .resultado-md p, .resultado-md li { margin: .4rem 0; }
+  .resultado-md ul, .resultado-md ol { padding-left: 1.25rem; }
+  .resultado-md { overflow-wrap: anywhere; }
+
+.btn-copy {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.btn-copy i {
+    color: #ffffff;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* altura do container de loading */
+    background-color: #90a8ca;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .spinner2 {
+   width: 40px; /* largura só do spinner */
+  height: 40px; /* altura só do spinner */
+  background-image: url('../img/progress-icon.gif');
+  background-repeat: no-repeat;
+  background-size: cover; /* ou ajuste para caber certinho */
+  background-position: center; /* centraliza o corte no spinner */
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.accordion h5:hover {
+cursor: pointer;
+}
+
+.fas,  .far {
+    color:#3b0000
+}
+
+/* Login */
+.form_create_account {
+    margin-top: 40px;
+    border-top: #90a8ca 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+hr {
+    border-top: #021b35 3px solid;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   /* background-color: #3b0000; */
+   height: 100vh;
+
+}
