@@ -1,8 +1,10 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+$rootPath = dirname(__DIR__);
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+require $rootPath . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable($rootPath);
 $dotenv->load();
 
 $CLIENT_ID     = $_ENV['MICROSOFT_CLIENT_ID'];

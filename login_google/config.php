@@ -1,7 +1,9 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
+$rootPath = dirname(__DIR__);
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+require $rootPath . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable($rootPath);
 $dotenv->load();
 
 $GOOGLE_CLIENT_ID     = $_ENV['GOOGLE_CLIENT_ID'];

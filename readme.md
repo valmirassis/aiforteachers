@@ -12,7 +12,3 @@ Para eventuais dúvidas, entre em contato com o pesquisador: Valmir Ribeiro de A
 - Composer
 - FastAPI (Python) disponível em https://github.com/valmirassis/aiforteachers-api
 - MariaDB 10
-
-
-
-
