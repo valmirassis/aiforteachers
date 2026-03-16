@@ -146,8 +146,58 @@
     </div>
   </div>
 
+<!-- ------------------------------ -->
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          📂 Expansão de texto
+        </h5>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        <ul class="list-group list-group-flush small mb-3">
+                  <li class="list-group-item">Essa opção realiza a expansão de textos.</li>
+                  <li class="list-group-item">Informe um texto para expansão.</li>
+                  <li class="list-group-item">O processo de expansão pode levar alguns segundos.</li>
+                  <li class="list-group-item">Há um campo para informar a quantidade aproximada de palavras desejadas a mais no texto.</li>
+                  <li class="list-group-item">É possível dar instruções extras, por exemplo, seja fiel ao contexto do texto.</li>
+           
+</ul>
+                
+                <p class="mb-0">Clique em <strong>Transformar texto</strong> para obter a expansão.</p>
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------ -->
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          📂 Criação de texto
+        </h5>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        <ul class="list-group list-group-flush small mb-3">
+                  <li class="list-group-item">Essa opção realiza a criação de novos textos.</li>
+                  <li class="list-group-item">Informe um tema ou ideia para criação de texto.</li>
+                  <li class="list-group-item">Escolha o formato do texto (parágrafos ou tópicos).</li>
+                  <li class="list-group-item">O processo de criação pode levar alguns segundos.</li>
+                  <li class="list-group-item">Informe o tamanho em palavras do texto desejado.</li>
+                  <li class="list-group-item">É possível dar instruções extras, por exemplo, escreva em estilo acadêmico.</li>
+           
+</ul>
+                
+                <p class="mb-0">Clique em <strong>Transformar texto</strong> para obter a criação de texto.</p>
+      </div>
+    </div>
+  </div>
 
   <!--  -->
+
 </div>
        
       
