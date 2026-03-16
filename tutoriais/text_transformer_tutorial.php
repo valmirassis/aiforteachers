@@ -148,14 +148,14 @@
 
 <!-- ------------------------------ -->
   <div class="card">
-    <div class="card-header" id="headingFive">
+    <div class="card-header" id="headingSix">
       <h5 class="mb-0">
-       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
           📂 Expansão de texto
         </h5>
       </h5>
     </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
       <div class="card-body">
         <ul class="list-group list-group-flush small mb-3">
                   <li class="list-group-item">Essa opção realiza a expansão de textos.</li>
@@ -172,14 +172,14 @@
   </div>
 <!-- ------------------------------ -->
   <div class="card">
-    <div class="card-header" id="headingFive">
+    <div class="card-header" id="headingSeven">
       <h5 class="mb-0">
-       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+       <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
           📂 Criação de texto
         </h5>
       </h5>
     </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
       <div class="card-body">
         <ul class="list-group list-group-flush small mb-3">
                   <li class="list-group-item">Essa opção realiza a criação de novos textos.</li>
