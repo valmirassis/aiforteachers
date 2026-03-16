@@ -1,5 +1,4 @@
-   <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
      <footer class="bg-dark">
         <p> Plataforma desenvolvida para o projeto de mestrado em Computação Aplicada - UDESC. <br>
       Mestrando: Valmir Ribeiro de Assis</p>

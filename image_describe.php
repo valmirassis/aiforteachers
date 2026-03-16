@@ -66,8 +66,5 @@ require_once('header.php');
 </section>
 
 <script src="js/image_describe.js"></script>
-
-
-
 <?php
 require_once('footer.php');

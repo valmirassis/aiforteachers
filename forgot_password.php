@@ -8,8 +8,6 @@ include 'functions.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-
-
 if(isset($_POST['forgot_email'])) {
  
     $email = $_POST['forgot_email'];
@@ -36,14 +34,6 @@ if(isset($_POST['forgot_email'])) {
        $stmt = $conn->prepare("UPDATE person SET password = ? WHERE email = ?");
        $stmt->bind_param("ss", $hashed_password, $email);
        if ($stmt->execute()) {
-           // Envia o email com a nova senha
-        //    $subject = "Nova Senha - AiForTeachers";
-        //    $message = "Olá professor,\n\n Sua nova senha é: ".$nova_senha;
-        //    $headers = "From: AiForTeachers <noreply@aiforteachers.com.br>\r\n";
-        //    mail($email, $subject, $message, $headers);
-             
-
-                    
 
                     $mail = new PHPMailer(true);
 

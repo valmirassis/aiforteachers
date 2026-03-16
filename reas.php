@@ -255,7 +255,6 @@ echo '</div>';
             echo '</div>';
             echo '<div id="' . $collapseId . '" class="collapse" aria-labelledby="' . $headingId . '" data-parent="#reaAccordion">';
             echo '<div class="card-body">';
-            // echo '<article>' . $Parsedown->text($row['content']) . '</article>';
            $json = json_decode($row['content'], true);
             if (json_last_error() === JSON_ERROR_NONE && is_array($json)) {
                $tipo = $json['tipo'] ?? '-';
@@ -305,7 +304,7 @@ echo '</div>';
             echo '</div>';
             echo '<div id="' . $collapseId . '" class="collapse" aria-labelledby="' . $headingId . '" data-parent="#reaAccordion">';
             echo '<div class="card-body">';
-            // echo '<article>' . $Parsedown->text($row['content']) . '</article>';
+
            $json = json_decode($row['content'], true);
             if (json_last_error() === JSON_ERROR_NONE && is_array($json)) {
                 $desc = $json['descricao'] ?? [];

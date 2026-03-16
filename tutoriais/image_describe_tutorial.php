@@ -78,7 +78,6 @@
     </div>
   </div>
 
- 
 
 </div>
        
@@ -86,8 +85,6 @@
       </section>
 
       <hr class="my-5" />
-
-
 
        <a href="image_describe.php" class="btn btn-primary mb-4"> Descrever Imagens</a>
     </main>

@@ -4,7 +4,6 @@ require_once('header.php');
 
     <div class="container mt-5"><h1> <i class="fas fa-certificate"></i> Sobre</h1><hr>
     
- 
   <p><b>TCLE - Termo de Consentimento Livre Esclarecido</b></p>
 <p>
 Todas as informações contidas nesta plataforma são destinadas a pesquisa de mestrado de Valmir Ribeiro de Assis, no Programa de Pós-graduação em Computação Aplicada, 

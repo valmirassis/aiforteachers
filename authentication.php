@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $redirect = filter_var($redirect, FILTER_SANITIZE_URL);
         }
-        // echo "<script>alert('Login realizado com sucesso.');</script>";
+
 
         header('Location: ' . $redirect);
         
@@ -59,6 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $redirectUrl = "login.php?erro=1&redirect=" . urlencode($redirect);
         echo "<script> window.location.replace(" . json_encode($redirectUrl) . ");</script>";
             exit;
-        // header('Location: login.php?erro=1&redirect=' . urlencode($redirect));
+
     }
 }

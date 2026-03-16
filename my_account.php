@@ -3,13 +3,11 @@ require_once('header.php');
 require_once('connection.php');
 require_once 'vendor/autoload.php';
 $Parsedown = new Parsedown();
-//  $Parsedown->setSafeMode(true); // evita HTML malicioso
 if (!isset($_SESSION['email'])) {
     $redirectUrl = "login.php";
     echo "<script> window.location.replace(" . json_encode($redirectUrl) . ");</script>";
     exit;
 } 
-
 
 ?>
 
@@ -51,8 +49,7 @@ if (!isset($_SESSION['email'])) {
     <h3> <i class="fas fa-feather"></i> Histórico de criações</h3>
        <ul class="list-group">
         <?php
-        // Agrupa pelo campo fk_type_rea_id e conta quantos REAs o usuário tem de cada tipo
-        // Busca os tipos de REA dinamicamente da tabela type_rea
+
         $rea_types = [];
         $type_stmt = $conn->prepare("SELECT id, nome FROM type_rea");
         $type_stmt->execute();
@@ -437,9 +434,7 @@ if (isset($_GET['rea'])) {
             echo '</div>';
             echo '<div id="' . $collapseId . '" class="collapse" aria-labelledby="' . $headingId . '" data-parent="#reaAccordion">';
             echo '<div class="card-body">';
-      
-            
-            
+           
             echo '<p><strong>Tipo de transformação:</strong> '.htmlspecialchars($types[$tipo] ?? $tipo);
             echo $info.'</p>';
             echo '<h5>Texto gerado:</h5>';

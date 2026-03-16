@@ -18,7 +18,7 @@ $oidc->addScope(['openid','email','profile']);
 // $oidc->addAuthParam(['prompt' => 'select_account']);
 
 $oidc->authenticate(); // redireciona p/ Google
-// Se voltar logado, você cai direto aqui (com tokens)
+
 $claims = $oidc->requestUserInfo(); // pega claims do id_token/userinfo
 
  require '../connection.php'; 
@@ -60,11 +60,6 @@ $claims = $oidc->requestUserInfo(); // pega claims do id_token/userinfo
             $_SESSION['id'] = $id;
     }
     salvar_log($id, "Login realizado");
-// Salva sessão
-// $typeAccount = 'google';    
-// $_SESSION['email'] = $claims->email ?? null;
-// $_SESSION['name']  = $claims->name  ?? null;
-// $_SESSION['type_account'] = $typeAccount;
-// $_SESSION['level'] = $level;
-header('Location: ../my_account.php'); // vai para sua home
+
+header('Location: ../my_account.php'); 
 exit;

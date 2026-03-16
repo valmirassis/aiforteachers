@@ -52,8 +52,6 @@ require_once('header.php');
                 <label for="infos_extras">Instruções extras (opcional):</label><br>
                 <textarea name="infos_extras" id="infos_extras" placeholder="Caso queira, adicione mais instruções aqui." class="form-control"></textarea>
             </div>
-            
-     
 
             <div class="col-12 mb-3" id="quantidade-section" style="display: none;">
                 <label for="quantidade_range">Quantas questões deseja gerar, no máximo 3 (funciona melhor com 1)?</label><br>
@@ -75,13 +73,10 @@ require_once('header.php');
         </div>
         
     </form>
- 
 
     <hr>
 
 <div id="resultado-ajax">
-
-
 </div>
 <button onclick="copyREA()" class="btn btn-info btn-copy" style="display: none;"><i class="fas fa-copy"></i> Copiar conteúdo gerado</button>
 
@@ -89,8 +84,6 @@ require_once('header.php');
 </section>
 
 <script src="js/activity_generator.js"></script>
-
-
 
 <?php
 require_once('footer.php');

@@ -135,20 +135,11 @@
         <li class="list-group-item">Para aula funciona melhor com até 60 minutos de duração. </li>
     </ul>
 
-
       </div>
        
-
-
-
-
-       
-      
       </section>
 
       <hr class="my-5" />
-
-
 
        <a href="script_generator.php" class="btn btn-primary mb-4"> Gerar Roteiro</a>
     </main>

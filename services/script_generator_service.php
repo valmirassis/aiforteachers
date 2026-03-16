@@ -71,9 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $type_rea = 5; // Define o tipo de REA
         $status = 1; // Define o status como ativo
         
-
         $md = preg_replace('/\binserir uma linha horizontal\b/i', "\n---\n", $md);
-
 
         $stmt = $conn->prepare("INSERT INTO rea (fk_type_rea_id, content, status, created, fk_person_id) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $type_rea, $content, $status, $created, $_SESSION['id']);
@@ -82,7 +80,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $Parsedown = new Parsedown();
         $md = $Parsedown->text($md);
         $md = preg_replace('/<table>/', "<table class='table table-striped'>", $md);
-        // $Parsedown->setSafeMode(true); // evita HTML malicioso
         echo '<article class="resultado-md">'.$md.'</article>';
 
  endif;

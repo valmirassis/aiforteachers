@@ -36,8 +36,7 @@ if (isset($_GET['tutorial'])) {
     echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=text_transformer">Transformador de Textos</a></li>';
     echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=image_describe">Descritor de Imagens</a></li>';
     echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=audio_text_converter">Conversor/Gerador de Áudio</a></li>'; 
-      
-    // Adicione mais tutoriais conforme necessário
+
     echo '</ul></div>';
 }
 

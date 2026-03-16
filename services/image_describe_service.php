@@ -69,8 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $short = $desc['alt_text'] ?? '';
     $long = $desc['descricao_longa'] ?? '';
     $ocr = $desc['texto_detectado'] ?? '';
-    // $qalt = strlen($alt);
-    // $qlong = strlen($long);
 
        
         if($long || $short || $tags) {
@@ -78,7 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt->bind_param("sssss", $type_rea, $content, $status, $created, $_SESSION['id']);
         $stmt->execute();
         $stmt->close();
-
 
         echo  "<article class='resultado-md'> <b>Tags: </b>" . ($tags ? $tags : "Não foi possível gerar tags.") . "</article>";
         echo "<article class='resultado-md'> <b>Descrição curta: </b>". ($short ? $short : "Não foi possível gerar descrição curta.") . "</article>";

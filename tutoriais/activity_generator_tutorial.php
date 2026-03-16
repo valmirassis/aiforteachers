@@ -6,7 +6,6 @@
          <i class="fas fa-list-ul"></i> Informações Gerador de Atividades
         </h1>
 
-
       <!-- Alerta principal -->
       <div class="alert alert-warning" role="alert">
         <strong>Professor</strong>, ao usar este sistema, é essencial revisar cuidadosamente a atividade gerada,
@@ -127,9 +126,7 @@
   </div>
 
 </div>
-       
-
-
+      
       </div>
          <hr class="my-5" />
 

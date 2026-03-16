@@ -10,7 +10,7 @@ if (ini_get('session.use_cookies')) {
 session_destroy();
 
 // URL de logout da Microsoft com post_logout_redirect_uri
-$POST_LOGOUT_REDIRECT = 'https://aiforteachers.com.br/'; // página simples que NÃO dispara login automático
+$POST_LOGOUT_REDIRECT = 'https://aiforteachers.com.br/'; 
 $logoutUrl = 'https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri='
            . urlencode($POST_LOGOUT_REDIRECT);
 

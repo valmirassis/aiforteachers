@@ -1,12 +1,10 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
-// Configuração
 
 require __DIR__ . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-
 
 $URL = $_ENV['API_URL'];
 
@@ -14,7 +12,6 @@ $API_TOKEN    = $_ENV['API_TOKEN'];
 
 $API_QUESTAO_TEMA = $URL."gerar-questoes-tema";
 $API_QUESTAO_PDF  = $URL."gerar-questoes-pdf";
-
 
 $API_ATIVIDADE_TEMA = $URL."gerar-atividade-tema";
 $API_ATIVIDADE_PDF  = $URL."gerar-atividade-pdf";
@@ -31,4 +28,7 @@ $API_EXPAND_TEXT  = $URL."expandir-texto";
 $API_SUMMARIZE_TEXT  = $URL."resumir-texto";
 $API_SUMMARIZE_PDF  = $URL."resumir-pdf";
 $API_CREATE_TEXT  = $URL."criar-texto";
+
+$API_TRANSCREVER_AUDIO = $URL."transcrever-audio";
+$API_SINTETIZAR_AUDIO = $URL."audio-sintetizar";
 

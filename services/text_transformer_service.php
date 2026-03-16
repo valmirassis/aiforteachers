@@ -154,7 +154,6 @@ if ($type_transformation === "A") { // Tradução
         $Parsedown = new Parsedown();
         $md = $Parsedown->text($md);
         $md = preg_replace('/<table>/', "<table class='table table-striped'>", $md);
-        // $Parsedown->setSafeMode(true); // evita HTML malicioso
         echo '<article class="resultado-md">'.$md.'</article>';
 
   } else {

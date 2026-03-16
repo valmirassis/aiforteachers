@@ -1,8 +1,5 @@
 <?php
 require_once('header.php');
-
-
-
 ?>
 
 <section>
@@ -23,9 +20,7 @@ para Professores do Ensino Superior.</h5> <br>
                 <h5>Gerador de Questões Múltipla Escolha</h5>
                 <p>Ferramenta para geração de questões Múltipla Escolha com base em tema ou conteúdo do professor</p></a>
             </div>
-            
-            
-       
+                 
             <div class="col-md-4 text-center">
                 <a href="script_generator.php">
                 <img src="img/Tool_script_generator.png" class="img-fluid mb-3" alt="Imagem 4">

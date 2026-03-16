@@ -13,7 +13,7 @@ $oidc = new OpenIDConnectClient(null, $CLIENT_ID, $CLIENT_SECRET);
 // issuer/provider para 'common' (multitenant)
 $issuer = 'https://login.microsoftonline.com/common/v2.0';
 // $oidc->setIssuer($issuer);
-$oidc->setProviderURL($issuer); // <-- necessário para a checagem interna
+$oidc->setProviderURL($issuer); 
 
 // endpoints manuais
 $oidc->providerConfigParam([

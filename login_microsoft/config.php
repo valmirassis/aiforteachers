@@ -13,7 +13,7 @@ $REDIRECT_URI  = 'https://aiforteachers.com.br/login_microsoft/callback.php';
 $POST_LOGOUT_REDIRECT = 'https://aiforteachers.com.br/';
 
 // Authority “v2.0” (pode usar tenant específico em vez de common)
-$TENANT_ID     = 'common'; // ou seu tenant específico
+$TENANT_ID     = 'common'; 
 $AUTHORITY     = 'https://login.microsoftonline.com/'.$TENANT_ID.'/v2.0';
 $DISCOVERY_URL = $AUTHORITY.'/.well-known/openid-configuration';
 

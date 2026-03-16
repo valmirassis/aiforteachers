@@ -5,7 +5,6 @@ require_once('../endpoints_api.php');
 require_once('../functions.php');
 require_once('../connection.php');
 
-$API_BASE = $URL;
 
 $DOWNLOAD_DIR = __DIR__ . '/downloads';
 if (!is_dir($DOWNLOAD_DIR)) {
@@ -86,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['modo'] ?? '') === 'stt') {
         $tmpPath = $destPath;
         // Chama o endpoint /transcrever-audio
         $resp = api_post_multipart(
-            rtrim($API_BASE, '/') . '/transcrever-audio',
+            $API_TRANSCREVER_AUDIO,
             [
                 'token'  => $API_TOKEN ,
                 'idioma' => $idioma,
@@ -131,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['modo'] ?? '') === 'tts') {
     } else {
         // Chama o endpoint /audio-sintetizar
         $resp = api_post_multipart(
-            rtrim($API_BASE, '/') . '/audio-sintetizar',
+            $API_SINTETIZAR_AUDIO,
             [
                 'token'   => $API_TOKEN ,
                 'texto'   => $text,

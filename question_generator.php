@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 if(!isset($_SESSION['email'])){
     $filename = basename($_SERVER['PHP_SELF']);
@@ -13,7 +11,7 @@ require_once('header.php');
 
     <section>
        <div class="container mt-5"> 
-    <h1> <i class="fas fa-tasks"></i> Gerador de Questões Múltipla Escolha</h1>
+    <h1> <i class="fas fa-tasks"></i>s Gerador de Questões Múltipla Escolha</h1>
   
     <hr>
      <div class="card">
@@ -49,8 +47,6 @@ require_once('header.php');
                 <input type="text" name="consulta" id="consulta" placeholder="Algum subtópico presente no arquivo" class="form-control">
             </div>
            
-     
-
             <div class="col-12 mb-3">
                 <label for="quantidade_range">Quantas questões deseja gerar, no máximo 3 (funciona melhor com 1)?</label><br>
                 <input type="number" name="quantidade" id="quantidade_range" min="1" max="3" value="1" class="form-control">
@@ -72,8 +68,6 @@ require_once('header.php');
         
     </form>
  
- 
-
     <hr>
 
 <div id="resultado-ajax">
@@ -87,8 +81,6 @@ require_once('header.php');
 </section>
 
 <script src="js/question_generator.js"></script>
-
-
 
 <?php
 require_once('footer.php');

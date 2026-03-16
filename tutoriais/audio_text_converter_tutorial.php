@@ -108,7 +108,6 @@
       <hr class="my-5" />
 
 
-
        <a href="audio_text_converter.php" class="btn btn-primary mb-4"> Gerar/converter aúdio</a>
     </main>
 

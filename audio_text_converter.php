@@ -66,7 +66,6 @@ require_once('header.php');
   <hr>    
 <div id="resultado-ajax">
 
-
 </div>
    <button onclick="copyREA()" class="btn btn-info btn-copy" style="display: none;"><i class="fas fa-copy"></i> Copiar conteúdo gerado</button>
 

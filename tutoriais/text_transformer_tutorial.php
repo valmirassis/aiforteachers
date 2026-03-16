@@ -5,8 +5,6 @@
         <h1 class="h3">
          <i class="fas fa-list-ul"></i> Informações Transformador de Texto
         </h1>
- 
-
       <!-- Alerta principal -->
       <div class="alert alert-warning" role="alert">
         <strong>Professor</strong>, ao usar este sistema, é essencial revisar cuidadosamente a descrição gerada,
