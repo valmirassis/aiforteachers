@@ -4,6 +4,16 @@ require_once('connection.php');
 require_once 'vendor/autoload.php';
 $Parsedown = new Parsedown();
  $Parsedown->setSafeMode(true); // evita HTML malicioso
+
+ $icons = [
+    4 => '<i class="fas fa-book"></i>',
+    1 => '<i class="fas fa-tasks"></i>',
+    5 => '<i class="fas fa-file-alt"></i>',
+    7 => '<i class="fas fa-align-left"></i>',
+    6 => '<i class="fas fa-images"></i>',
+    2 => '<i class="fas fa-file-audio"></i>',
+    3 => '<i class="fas fa-file-audio"></i>'
+];
 ?>
 
 <div class="container mt-5">
@@ -33,7 +43,7 @@ $Parsedown = new Parsedown();
             $type_name = $rea_types[$row['fk_type_rea_id']] ?? 'Tipo ' . $row['fk_type_rea_id'];
             ?>
             <li class="list-group-item"><a href="?rea=<?= htmlspecialchars($row['fk_type_rea_id']) ?>">
-           <i class="fas fa-hashtag"></i>  <?= htmlspecialchars($type_name) ?> (<strong><?= $row['total'] ?></strong>)
+           <?= isset($icons[$row['fk_type_rea_id']]) ? $icons[$row['fk_type_rea_id']] : '<i class="fas fa-hashtag"></i>' ?>  <?= htmlspecialchars($type_name) ?> (<strong><?= $row['total'] ?></strong>)
             </a></li>
             <?php
         }
@@ -50,7 +60,7 @@ if (isset($_GET['rea'])) {
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Questões Múltipla Escolha</h4>";
+        echo "<hr>  <h4> <i class='fas fa-tasks'></i> Questões Múltipla Escolha</h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
@@ -82,7 +92,7 @@ if (isset($_GET['rea'])) {
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Transcrições de áudio em texto</h4>";
+        echo "<hr>  <h4> <i class='fas fa-file-alt'></i> Transcrições de áudio em texto</h4>";
 
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
@@ -147,7 +157,7 @@ echo '</div>';
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr> <h4> <i class='fas fa-dice-four'></i> Conversões de texto em áudio </h4>";
+        echo "<hr> <h4> <i class='fas fa-file-audio'></i> Conversões de texto em áudio </h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
@@ -190,7 +200,7 @@ echo '</div>';
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Atividades</h4>";
+        echo "<hr>  <h4> <i class='fas fa-book'></i> Atividades</h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
@@ -235,12 +245,12 @@ echo '</div>';
         echo '</div>';
 // ##########################################################
     } else if ($rea === '5') {
-        // Exibe questões múltipla escolha
+        // Exibe roteiros
         $stmt = $conn->prepare("SELECT r.*, p.name FROM rea as r, person as p WHERE fk_type_rea_id = ? AND r.fk_person_id = p.id ORDER BY r.id DESC");
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Roteiros</h4>";
+        echo "<hr>  <h4> <i class='fas fa-file-alt'></i> Roteiros</h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
@@ -284,12 +294,12 @@ echo '</div>';
         echo '</div>';
 // ##########################################################
     } else if ($rea === '6') {
-        // Exibe questões múltipla escolha
+        // Exibe descrições de imagens  
         $stmt = $conn->prepare("SELECT r.*, p.name FROM rea as r, person as p WHERE fk_type_rea_id = ? AND r.fk_person_id = p.id ORDER BY r.id DESC");
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Descrições</h4>";
+        echo "<hr>  <h4> <i class='fas fa-images'></i> Descrições</h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
@@ -343,7 +353,7 @@ echo '</div>';
         $stmt->bind_param("s", $rea);
         $stmt->execute();
         $result = $stmt->get_result();
-        echo "<hr>  <h4> <i class='fas fa-dice-four'></i> Transformações</h4>";
+        echo "<hr>  <h4> <i class='fas fa-align-left'></i> Transformações</h4>";
         echo '<div class="accordion" id="reaAccordion" style="margin-top: 20px;">';
         $index = 0;
         if ($result->num_rows > 0) {
