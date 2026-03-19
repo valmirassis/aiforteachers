@@ -11,7 +11,7 @@ require_once('header.php');
 
     <section>
        <div class="container mt-5"> 
-    <h1> <i class="fas fa-tasks"></i>s Gerador de Questões Múltipla Escolha</h1>
+    <h1> <i class="fas fa-tasks"></i> Gerador de Questões Múltipla Escolha</h1>
   
     <hr>
      <div class="card">

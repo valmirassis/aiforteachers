@@ -3,7 +3,7 @@
       <!-- Título -->
       <header class="mb-4">
         <h1 class="h3">
-         <i class="fas fa-list-ul"></i> Informações Gerador de Questões Múltipla Escolha
+         <i class="fas fa-tasks"></i> Informações Gerador de Questões Múltipla Escolha
         </h1>
       </header>
 
@@ -18,7 +18,7 @@
       <!-- Sobre o sistema -->
       <section class="mb-5">
         <h2 class="h4 fw-semibold d-flex align-items-center gap-2">
-          <span aria-hidden="true">💡</span> Sobre a ferramenta
+          <i class="fas fa-lightbulb"> </i> &nbsp; Sobre a ferramenta
         </h2>
         <p class="mb-2">
           Esta ferramenta utiliza o modelo de linguagem <strong>Gemini</strong> integrado via <strong>LangChain</strong>.
@@ -31,12 +31,12 @@
 
       <!-- Diferencial -->
       <section class="mb-5">
-        <h2 class="h4 fw-semibold">🎯 Diferencial da ferramenta em relação ao uso direto em um LLM</h2>
+        <h2 class="h4 fw-semibold"><i class="fas fa-hand-point-right"></i> Diferencial da ferramenta em relação ao uso direto em um LLM</h2>
         <p>
           Este sistema foi desenvolvido para transformar um modelo de linguagem (LLM) genérico em uma
           ferramenta educacional específica e acessível para professores.
         </p>
-       <h5 class="fw-semibold">📚 Vantagens</h5>
+       <h5 class="fw-semibold"><i class="fas fa-star"></i> Vantagens</h5>
 
           <ul class="mb-0">
                   <li>Interface simples e orientada para professores.</li>
@@ -50,7 +50,7 @@
                 </ul>
       </section>
 <section class="mb-5">
-              <h2 class="h4 fw-semibold">  ⚙️ Como utilizar o gerador de questões</h2>
+              <h2 class="h4 fw-semibold">  <i class="fas fa-cog"></i> Como utilizar o gerador de questões</h2>
 
      <div class="accordion" id="accordionExample">
 
@@ -58,7 +58,7 @@
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
        <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          📂 Modo: Baseado em Tema
+         <i class="fas fa-folder"></i> Modo: Baseado em Tema
         </h5>
       </h5>
     </div>
@@ -82,7 +82,7 @@
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
  <h5 class="collapsed"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">       
-          📄 Modo: Baseado em Arquivo PDF
+          <i class="fas fa-file-pdf"></i> Modo: Baseado em Arquivo PDF
         </h5>
       </h5>
     </div>
@@ -117,15 +117,15 @@
 
       <!-- Estruturas de questões -->
       <section class="mb-5">
-        <h2 class="h4 fw-semibold d-flex align-items-center gap-2">
-          <span aria-hidden="true">🧠</span> Estruturas de questões suportadas
+        <h2 class="h4 fw-semibold d-flex align-items-center ">
+          <i class="fas fa-cog"></i> &nbsp; Estruturas de questões suportadas
         </h2>
 
         <div class="row g-4">
           <div class="col-12 col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h5">✅ Múltipla Escolha Simples</h3>
+                <h3 class="h5"><i class="fas fa-check-square"></i> Múltipla Escolha Simples</h3>
                 <ul class="mb-0">
                   <li>Enunciado com <strong>pelo menos 40 palavras</strong>.</li>
                   <li>5 alternativas (<strong>a–e</strong>) — apenas 1 correta.</li>
@@ -138,7 +138,7 @@
           <div class="col-12 col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h5">✅ Múltipla Escolha com Afirmativas</h3>
+                <h3 class="h5"><i class="fas fa-check-square"></i> Múltipla Escolha com Afirmativas</h3>
                 <ul class="mb-0">
                   <li>Enunciado com <strong>pelo menos 40 palavras</strong>.</li>
                   <li>4 afirmativas sobre o tema (I a IV).</li>
@@ -152,7 +152,7 @@
           <div class="col-12 col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h5">✅ Múltipla Escolha Asserção-Razão</h3>
+                <h3 class="h5"><i class="fas fa-check-square"></i> Múltipla Escolha Asserção-Razão</h3>
                 <ul class="mb-0">
                   <li>Enunciado com <strong>pelo menos 40 palavras</strong>.</li>
                   <li>1 <strong>asserção</strong> e 1 <strong>razão</strong>.</li>
@@ -166,7 +166,7 @@
           <div class="col-12 col-lg-6">
             <div class="card h-100">
               <div class="card-body">
-                <h3 class="h5">✅ Número de questões</h3>
+                <h3 class="h5"><i class="fas fa-check-square"></i> Número de questões</h3>
                 <ul class="mb-0">
                   <li>É possível gerar 1, 2 ou 3 questões por solicitação.</li>
                   <li class="small text-body-secondary">Na geração por arquivos, recomenda-se gerar apenas 1 questão.</li>
@@ -178,7 +178,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <h3 class="h5 mb-2">✅ Nível de dificuldade</h3>
+                <h3 class="h5 mb-2"><i class="fas fa-check-square"></i> Nível de dificuldade</h3>
                 <ul class="mb-2">
                   <li>Se a opção <em>“Gerar questão com versões em nível de dificuldade fácil e difícil?”</em> for marcada,
                     serão geradas duas versões (fácil e difícil) por questão.</li>
@@ -207,7 +207,7 @@
 
       <!-- Taxonomia de Bloom -->
       <section class="mb-5">
-        <h2 class="h4 fw-semibold">📖 Taxonomia de Bloom</h2>
+        <h2 class="h4 fw-semibold"><i class="fas fa-bookmark"></i> Taxonomia de Bloom</h2>
         <div class="card">
           <div class="card-body">
             <p class="mb-3">

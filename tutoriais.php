@@ -30,12 +30,12 @@ if (isset($_GET['tutorial'])) {
     echo '<ul class="list-group">';
     
     
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=activity_generator">Gerador de Atividades</a></li>';
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=question_generator">Gerador de Questões Múltipla Escolha</a></li>';
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=script_generator">Gerador de Roteiros</a></li>';
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=text_transformer">Transformador de Textos</a></li>';
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=image_describe">Descritor de Imagens</a></li>';
-    echo '<li class="list-group-item"><i class="fas fa-hashtag"></i> <a href="?tutorial=audio_text_converter">Conversor/Gerador de Áudio</a></li>'; 
+    echo '<li class="list-group-item"><i class="fas fa-book"></i> <a href="?tutorial=activity_generator">Gerador de Atividades</a></li>';
+    echo '<li class="list-group-item"><i class="fas fa-tasks"></i> <a href="?tutorial=question_generator">Gerador de Questões Múltipla Escolha</a></li>';
+    echo '<li class="list-group-item"><i class="fas fa-file-alt"></i> <a href="?tutorial=script_generator">Gerador de Roteiros</a></li>';
+    echo '<li class="list-group-item"><i class="fas fa-align-left"></i> <a href="?tutorial=text_transformer">Transformador de Textos</a></li>';
+    echo '<li class="list-group-item"><i class="fas fa-images"></i> <a href="?tutorial=image_describe">Descritor de Imagens</a></li>';
+    echo '<li class="list-group-item"><i class="fas fa-file-audio"></i> <a href="?tutorial=audio_text_converter">Conversor/Gerador de Áudio</a></li>'; 
 
     echo '</ul></div>';
 }

@@ -3,7 +3,7 @@
       <!-- Título -->
 
         <h1 class="h3">
-         <i class="fas fa-list-ul"></i> Informações Gerador de Atividades
+        <i class="fas fa-book"></i> Informações Gerador de Atividades
         </h1>
 
       <!-- Alerta principal -->
@@ -17,7 +17,7 @@
       <!-- Sobre o sistema -->
       <div class="mb-5">
         <h2 class="h4 fw-semibold d-flex align-items-center gap-2">
-          <span aria-hidden="true">💡</span> Sobre a ferramenta
+          <i class="fas fa-lightbulb"> </i> &nbsp;  Sobre a ferramenta
         </h2>
         <p class="mb-2">
           Esta ferramenta utiliza o modelo de linguagem <strong>Gemini</strong> para geração de atividades.
@@ -29,12 +29,12 @@
 
       <!-- Diferencial -->
       <div class="mb-5">
-        <h2 class="h4 fw-semibold">🎯 Diferencial da ferramenta em relação ao uso direto em um LLM</h2>
+        <h2 class="h4 fw-semibold"><i class="fas fa-hand-point-right"></i> Diferencial da ferramenta em relação ao uso direto em um LLM</h2>
         <p>
           Este sistema foi desenvolvido para transformar um modelo de linguagem (LLM) genérico em uma
           ferramenta educacional específica e acessível para professores.
         </p>
-       <h5 class="fw-semibold">📚 Vantagens</h5>
+       <h5 class="fw-semibold"><i class="fas fa-star"></i> Vantagens</h5>
 
           <ul class="mb-0">
                   <li>Interface simples e orientada para professores.</li>
@@ -48,14 +48,14 @@
                 </ul>
       </div>
 <div class="mb-5">
-              <h2 class="h4 fw-semibold">  ⚙️ Como utilizar o gerador Gerador de Atividades</h2>
+              <h2 class="h4 fw-semibold">  <i class="fas fa-cog"></i> Como utilizar o gerador Gerador de Atividades</h2>
      <div class="accordion" id="accordionExample">
 
 <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
        <h5 class=" collapsed"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          📂 Modo: Baseado em Tema
+          <i class="fas fa-folder"></i> Modo: Baseado em Tema
         </h5>
       </h5>
     </div>
@@ -88,7 +88,7 @@
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
  <h5 class="collapsed"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">       
-          📄 Modo: Baseado em Arquivo PDF
+          <i class="fas fa-file-pdf"></i> Modo: Baseado em Arquivo PDF
         </h5>
       </h5>
     </div>
