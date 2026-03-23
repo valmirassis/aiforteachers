@@ -9,6 +9,11 @@ Para eventuais dúvidas, entre em contato com o pesquisador: Valmir Ribeiro de A
 ## 🚀 Tecnologias Utilizadas
 
 - PHP 8.3
-- Composer
-- FastAPI (Python) disponível em https://github.com/valmirassis/aiforteachers-api
+- Composer - Consultar dependências no arquivo composer.json
 - MariaDB 10
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- FastAPI (Python) APIs consumidas por esse backend disponível em https://github.com/valmirassis/aiforteachers-api
+
