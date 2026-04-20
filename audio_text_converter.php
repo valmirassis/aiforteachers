@@ -52,7 +52,7 @@ require_once('header.php');
           <label class="form-label">Voz</label>
           <select name="voz" class="form-control" id="select-voz" required>
            <option></option>
-            <option value="pt-BR-Wavenet-A">Voz feminina</option>
+            <option value="pt-BR-Wavenet-A" selected>Voz feminina</option>
             <option value="pt-BR-Wavenet-B">Voz masculina</option>
           </select>
         </div>
@@ -63,7 +63,7 @@ require_once('header.php');
       </div>
       </div>
       </form><br>
-  <hr>    
+    
 <div id="resultado-ajax">
 
 </div>

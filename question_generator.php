@@ -50,7 +50,10 @@ require_once('header.php');
             <div class="col-12 mb-3">
                 <label for="quantidade_range">Quantas questões deseja gerar, no máximo 3 (funciona melhor com 1)?</label><br>
                 <input type="number" name="quantidade" id="quantidade_range" min="1" max="3" value="1" class="form-control">
-
+            </div>
+            <div class="col-12 mb-3">
+                <label for="infos_extras">Instruções extras (opcional):</label><br>
+                <textarea name="infos_extras" id="infos_extras" placeholder="Caso queira, adicione mais instruções aqui." class="form-control"></textarea>
             </div>
 
             <div class="col-12 mb-3">

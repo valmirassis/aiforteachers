@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $question_type = $_POST['tipo_questao'];
     $amount = $_POST['quantidade'];
     $difficulty = $_POST['dificuldade'];
+    $infos_extras = $_POST['infos_extras'];
 
     if ($base_type === "tema") {
         $theme = $_POST['tema'];
@@ -17,7 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             "tema" => $theme,
             "tipo" => $question_type,
             "qtd" => $amount,
-            "dificuldade" => $difficulty
+            "dificuldade" => $difficulty,
+            "infos_extras" => $infos_extras
         ];
 
         $options = [
@@ -41,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             "tipo" => $question_type,
             "qtd" => $amount,
             "dificuldade" => $difficulty,
+            "infos_extras" => $infos_extras,
             "consulta" => $query,
             "arquivo" => $file
         ];
