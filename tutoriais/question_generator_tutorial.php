@@ -72,6 +72,9 @@
                   <li class="list-group-item">“Reforma tributária”</li>
                   <li class="list-group-item">“Programação orientada a objetos”</li>
                 </ul>
+                <li>Caso queira, é possível dar informações extras ao modelo, por exemplo, 
+                  supondo que tenha colocado o tema como "Implantação da LGPD" no campo instruções extras pode colocar um informação extra como 
+                  "A questão deve ser e abordar os impactos da LGPD no setor médico". Ou ainda, coloque uma citação direta no enunciado para contextualizar a questão.
                 </ul>
                 
                 <p class="mb-0">Clique em <strong>Gerar questão</strong> para obter o resultado.</p>
@@ -92,17 +95,18 @@
                   <li>O modelo utilizará o conteúdo <strong>presente no arquivo</strong> para gerar a questão.</li>
                   <li>É possível informar um assunto presente no arquivo para direcionar a geração (campo
                     <em>“Sobre o que a questão deve tratar?”</em>).</li>
+                    <li>Caso queira, é possível dar informações extras ao modelo, por exemplo, 
+                  supondo que tenha colocado o tema como "Implantação da LGPD" no campo instruções extras pode colocar um informação extra como 
+                  "A questão deve ser e abordar os impactos da LGPD no setor médico". Ou ainda, coloque uma citação direta no enunciado para contextualizar a questão.
                 </ul>
 
                 <div class="alert alert-info small" role="alert">
-                  <strong>Importante:</strong> o modelo pode gerar conteúdo irrelevante (alucinação) se o texto não
-                  fornecer base suficiente.
+                  <strong>Importante:</strong> o modelo pode gerar conteúdo irrelevante (alucinação) se o texto não fornecer base suficiente.
                 </div>
 
                 <ul class="mb-0">
                   <li><strong>Recomendação:</strong> use arquivos entre <strong>2 e 20 páginas</strong>.</li>
-                  <li><strong>Observação:</strong> páginas com menos de <strong>300 caracteres</strong> são
-                    <strong>descartadas pelo sistema</strong>.</li>
+                  <li><strong>Observação:</strong> páginas com menos de <strong>300 caracteres</strong> são <strong>descartadas pelo sistema</strong>.</li>
                   <li>O sistema lê apenas os textos presentes no arquivo, sem considerar o conteúdo gráfico.</li>
                 </ul>
       </div>

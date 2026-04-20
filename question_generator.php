@@ -17,7 +17,7 @@ require_once('header.php');
      <div class="card">
     <div class="card-body">
     <p>Esta ferramenta permite gerar questões de múltipla escolha. Você pode escolher entre gerar questões baseadas em um tema ou enviar um arquivo PDF contendo o conteúdo desejado.</p>
-<p class="alert alert-info">Antes de gerar as questões, consulte a página de <strong><a href="../tutoriais.php?tutorial=question_generator"> informações sobre a ferramenta</a>.</strong></p>
+<p class="alert alert-info">Antes de gerar as questões, consulte a página de <strong><a href="tutoriais.php?tutorial=question_generator"> informações sobre a ferramenta</a>.</strong></p>
     <form method="POST" enctype="multipart/form-data" action="services/question_generator_service.php">
         <div class="row">
              <div class="col-12 mb-3">
