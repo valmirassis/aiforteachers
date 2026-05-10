@@ -173,7 +173,7 @@
                 <h3 class="h5"><i class="fas fa-check-square"></i> Número de questões</h3>
                 <ul class="mb-0">
                   <li>É possível gerar 1, 2 ou 3 questões por solicitação.</li>
-                  <li class="small text-body-secondary">Na geração por arquivos, recomenda-se gerar apenas 1 questão.</li>
+                  <li>Na geração por arquivos, recomenda-se gerar apenas 1 questão.</li>
                 </ul>
               </div>
             </div>

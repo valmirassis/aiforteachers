@@ -30,7 +30,7 @@ require_once('header.php');
 <br><br>
             <div class="row" id="audio-section">
         <div class="col-12">
-          <label class="form-label">Arquivo de áudio</label>
+          <label class="form-label">Arquivo de áudio (máx 50 MB)</label>
           <input type="file" name="arquivo" accept="audio/*, .mp4" class="form-control">
         </div>
         <div class="col-md-3 align-self-end"><br>

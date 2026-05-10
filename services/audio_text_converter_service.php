@@ -227,7 +227,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['modo'] ?? '') === 'tts') {
         }
         
         ?>
-        <hr>
+       
         <h6>Resultado</h6>
         <audio controls class="w-100" src="<?=htmlspecialchars($ttsResultPath)?>"></audio>
         <div class="mt-2">

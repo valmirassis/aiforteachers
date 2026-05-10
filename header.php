@@ -32,8 +32,18 @@ include 'functions.php';
       <li class="nav-item">
         <a class="nav-link" href="sobre.php">Sobre</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tutoriais.php">Tutoriais</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tutoriais</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                
+          <a class="dropdown-item" href="tutoriais.php?tutorial=activity_generator">Gerador de Atividades</a>
+          <a class="dropdown-item" href="tutoriais.php?tutorial=question_generator">Gerador de Questões Múltipla Escolha</a>
+          <a class="dropdown-item" href="tutoriais.php?tutorial=script_generator">Gerador de Roteiros</a>
+          <a class="dropdown-item" href="tutoriais.php?tutorial=text_transformer">Transformador de textos</a>
+          <a class="dropdown-item" href="tutoriais.php?tutorial=image_describe">Descritor de Imagens</a>
+          <a class="dropdown-item" href="tutoriais.php?tutorial=audio_text_converter">Conversor/Gerador de Áudio</a>
+
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,6 +68,9 @@ include 'functions.php';
       <?php endif; ?>
       <li class="nav-item">
         <a class="nav-link" href="my_account.php">Minha conta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="avaliar.php">Avaliar</a>
       </li>
       
     </ul>
